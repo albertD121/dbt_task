@@ -9,6 +9,5 @@ select
     country,
     traffic_source
 
---from {{ source('thelook_ecommerce', 'users') }}
-from `bigquery-public-data`.`thelook_ecommerce`.`users`
+from {{ source('thelook_ecommerce', 'users') }}
 order by customer_id
